@@ -3,7 +3,7 @@
 
 (defn sum-digits
   "Sum the digits of a number"
-  [number total]    
+  [number total]
   (if (> number 0)
     (sum-digits (int (/ number 10)) (+ total (mod number 10)))
     total))
